@@ -1,13 +1,472 @@
 /* Please write code css here */
+.main{
+  width: 100%;
+  min-height: 400px;
+  margin-top: 72px;
+}
+.title{
+  width: 100%;
+  height: 135px;
+}
+.title-text{
+  max-width: 200px;
+  height: 90px;
+  margin: auto;
+  position: relative;
+}
+.title-text::after{
+  content: ' ';
+  position: absolute;
+  left: 40px;
+  top: 81px;
+  width:120px;
+  height: 1px;
+  background-color: #dddddd;
+}
+.title-text::before{
+  content: ' ';
+  position: absolute;
+  left: 80px;
+  bottom: 7px;
+  width:40px;
+  height: 3px;
+  background-color: #47b2e4;
+  z-index: 2;
+}
+.title-text h3{
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 90px;
+  text-align: center;
+  color: #37517e;
+}
+.search-section{
+  width: 100%;
+  min-height: 355px;
+  background-color: #f3f5fa;
+}
+.logo-image{
+  max-width: 1250px;
+  min-height: 100px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+/* laptop */
+@media only screen and (max-width:1380px){
+  .logo-image{
+    width: 1100px;
+  }
+  .search{
+    width: 550px;
+  }
+  .image1,.image2,.image3,.image4,.image5,.image6{
+    width: 16.66%;
+    height: 100px;
+  }
+}
+@media only screen and (max-width:1200px){
+  .logo-image{
+    width: 900px;
+  }
+  .search{
+    width: 500px;
+  }
+}
+/* laptop */
+/* ipad */
+@media only screen and (max-width:991px){
+  .logo-image{
+    max-width: calc(2000px/3);
+  }
+   .image1,.image2,.image3,.image4,.image5,.image6{
+    width: 208.33px;
+    height: 90px;
+
+  } 
+  .image3{
+    margin-left: -15px;
+  }
+  .image4{
+    margin-left: -30px;
+  }
+  .image5{
+    margin-left: 10px;
+  }
+  .image6{
+    margin-right: 30px;
+  }
+
+}
+/* ipad */
+/* phone */
+@media only screen and (max-width:600px){
+  .logo-image{
+    width: 80%;
+
+    margin: auto;
 
 
+  }
+   .image1,.image2,.image3,.image4,.image5,.image6{
+    width: 150px;
+    height: 80px;
+  } 
+  .image1{
+    margin-left: 30px;
+  }
+  .image2{
+    margin-right: 15px;
+  }
+  .image3{
+    margin-left: 18px;
+  }
+  .image4{
+    margin-right: 30px;
+  }
+  .image5{
+    margin-left: 0px;
+  }
+  .image6{
+    margin-right: 45px;
+  }
+ .search{
+  width: 100%;
+ }
+ .search .search-text2{
+  width: 100%;
+  margin: auto;
+  margin-bottom: 10px;
+}
+ .search .search-text1{
+  width: 100%;
+  margin: auto;
+  margin-bottom: 10px;
+}
+}
+@media only screen and (max-width:380px){
+  .logo-image{
+    width: 100%;
 
+    margin: auto;
 
-
-
-
-
-
+  }
+}
+/* phone */
+.image1,.image2,.image3,.image4,.image5,.image6{
+  max-width: 208.33px;
+  height: 100px;
+  cursor: pointer;
+}
+.image1 img{
+  width: 43%;
+  height: 100%;
+  margin-left: 15%;
+  object-fit: contain;
+  object-position: center center;
+  filter: grayscale(100%);
+  transition: 0.5s;
+}
+.image2 img{
+  width: 43%;
+  height: 100%;
+  margin-left: 20%;
+  object-fit: contain;
+  object-position: center center;
+  filter: grayscale(100%);
+  transition: 0.5s;
+}
+.image3 img{
+  width: 43%;
+  height: 100%;
+  margin-left: 25%;
+  object-fit: contain;
+  object-position: center center;
+  filter: grayscale(100%);
+  transition: 0.5s;
+}
+.image4 img{
+  width: 43%;
+  height: 100%;
+  margin-left:30%;
+  object-fit: contain;
+  object-position: center center;
+  filter: grayscale(100%);
+  transition: 0.5s;
+}
+.image5 img{
+  width: 43%;
+  height: 100%;
+  margin-left: 35%;
+  object-fit: contain;
+  object-position: center center;
+  filter: grayscale(100%);
+  transition: 0.5s;
+}
+.image6 img{
+  width: 43%;
+  height: 100%;
+  margin-left: 40%;
+  object-fit: contain;
+  object-position: center center;
+  filter: grayscale(100%);
+  transition: 0.5s;
+}
+.image1:hover img{
+  transform: scale(1.1);
+  filter: grayscale(0%);
+}
+.image2:hover img{
+  transform: scale(1.1);
+  filter: grayscale(0%);
+}
+.image3:hover img{
+  transform: scale(1.1);
+  filter: grayscale(0%);
+}
+.image4:hover img{
+  transform: scale(1.1);
+  filter: grayscale(0%);
+}
+.image5:hover img{
+  transform: scale(1.1);
+  filter: grayscale(0%);
+}
+.image6:hover img{
+  transform: scale(1.1);
+  filter: grayscale(0%);
+}
+.search{
+  max-width: 700px;
+  min-height: 200px;
+  margin: auto;
+  margin-top: 53px;
+}
+.search-text1{
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  font-weight: 900;
+  font-size: 23px;
+  color: #37517e;
+}
+.search-text2{
+  width: 100%;
+  min-height: 50px;
+  text-align: center;
+  color: #37517e;
+  font-size: 15px;
+}
+.search-bar{
+  width: 90%;
+  height: 40px;
+  /* border: 1px solid red; */
+  position: relative;
+  margin: auto;
+  display: flex;
+  border-radius: 30px;
+  box-shadow: -1px 0px 10px -7px rgba(0,0,0,0.75);
+}
+.search-box {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  border-right: none;
+  padding:17px;
+  outline: none;
+  border: none;
+  color: black;
+  border-radius: 30px;
+}
+.search-Button {
+  position: absolute;
+  right: 0;
+  width: 110px;
+  height: 40px;
+  border: 1px solid #47b2e4;
+  background: #47b2e4;
+  text-align: center;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 30px;
+  transition: 0.3s;
+}
+.search-Button p{
+  line-height: 35px;
+}
+.search-bar .search-Button:hover{
+  background-color: #209dd8;
+  border: 1px solid #209dd8;
+}
+.archi-section{
+  width: 100%;
+  min-height: 690px;
+  border-bottom: 1px solid rgb(202, 202, 202);
+}
+.archi-content{
+  width: 90%;
+  min-height: 690px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.archi-content-left{
+  width: 55%;
+  min-height: 450px;
+  margin-top: 120px;
+  margin-left: 15px;
+}
+.archi-text1{
+  width: 100%;
+  min-height: 70px;
+  line-height: 37px;
+}
+.archi-text1 p{
+  font-size: 30px;
+  font-weight: 500;
+  color: #37517e;
+}
+.archi-text1 p span{
+  font-weight: 900;
+}
+.archi-text2{
+  width: 100%;
+  min-height: 50px;
+  font-size: 15px;
+  font-weight: 500;
+  margin-top: 20px;
+  color: #8a8a8a;
+}
+.archi-text3-top{
+  width: 88%;
+  min-height: 30px;
+  font-weight: 800;
+  margin-top: 20px;
+  margin-left: 20px;
+  display: flex;
+  justify-content: space-between;
+  color: #47b2e4;
+}
+.archi-text3-top p{
+  font-size: 18px;
+}
+.archi-text3-top i{
+  font-size: 16px;
+  font-weight: 900;
+  line-height: 28px;
+}
+.archi-text3-top p span{
+  font-size: 16px;
+  margin-left: 7px;
+}
+.archi-text3-bot{
+  width: 95%;
+  min-height: 50px;
+  font-weight: 400;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+.archi-text3-bot p{
+  font-size: 16px;
+}
+.archi-text4{
+  width: 88%;
+  height: 30px;
+  font-weight: 800;
+  margin-top: 55px;
+  margin-left: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.archi-text4 p{
+  font-size: 18px;
+  color: #47b2e4;
+}
+.archi-text4 i{
+  font-size: 16px;
+  font-weight: 900;
+  line-height: 28px;
+}
+.archi-text4  span{
+  font-size: 16px;
+  margin-left: 7px;
+  color: rgb(77, 77, 77);
+}
+.archi-text4:hover span{
+  color: #47b2e4;
+}
+.archi-text4:hover i{
+  color: #47b2e4;
+}
+.archi-text5{
+  width: 88%;
+  min-height: 30px;
+  font-weight: 800;
+  margin-top: 55px;
+  margin-left: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.archi-text5:hover span{
+  color: #47b2e4;
+}
+.archi-text5:hover i{
+  color: #47b2e4;
+}
+.archi-text5 p{
+  font-size: 18px;
+  color: #47b2e4;
+}
+.archi-text5 i{
+  font-size: 16px;
+  font-weight: 900;
+  line-height: 28px;
+}
+.archi-text5  span{
+  font-size: 16px;
+  margin-left: 7px;
+  color: rgb(77, 77, 77);
+}
+.archi-content-right{
+  width: 40%;
+  height: 690px;
+  background-image: url(../img/why-us.png);
+  background-size: 90% 80%;
+  background-position: center right;
+  background-repeat: no-repeat;
+}
+@media only screen and (max-width:991px){
+  .archi-content-right{
+    width: 100%;
+    height: 400px;
+    order: -1;
+    background-position: center;
+    background-size: 70% 100%;
+  }
+  .archi-content-left{
+    width: 100%;
+    min-height: 400px;
+    order: 1;
+  }
+}
+@media only screen and (max-width:700px){
+  .archi-content-right{
+    width: 100%;
+    height: 200px;
+    order: -1;
+    background-position: center;
+    background-size: 70% 100%;
+    margin-bottom: -100px;
+  }
+  .archi-content-left{
+    width: 100%;
+    min-height: 400px;
+    order: 1;
+  }
+}
 
 
 
