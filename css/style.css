@@ -1,11 +1,286 @@
 /* Please write code css here */
-body{
+.head-title{
+  width: 100%;
+  height: 70px;
+  margin-top: 107px;
+}
+.head-title h1{
+  text-align: center;
+  font-size: 32px;
+  text-transform: uppercase;
+  color: rgb(59, 81, 127);
+  font-weight: bold;
+}
+.underline{
+  width: 120px;
+  height: 1px;
+  margin: 18px auto;
+  display: flex;
+}
+.udl{
+  width: 50%;
+  height: 1px;
+  background-color: rgba(128, 128, 128, 0.274);
+}
+.udl-spec{
+  width: 50%;
+  height: 3px;
+  background-color: rgb(90, 179, 230);
+  margin-top: -1px;
+}
+.txtbox{
+  max-width: 1293px;
+  height: 70px;
+  margin: 10px auto;
+}
+.txtbox p{
+  text-align: center;
+}
+.contact-info{
+  max-width: 1293px;
+  height: 630px;
+  margin: auto;
+  background-color: rgba(245, 245, 245, 0.507);
+  display: flex;
+  justify-content: space-between;
+}
+.maps{
+  width: 40.3%;
+  height: 630px;
+  background-color: white;
+  box-shadow: -1px 1px 13px 3px rgba(128, 128, 128, 0.158);
+  border-top: 3px solid rgb(90, 179, 230);
+  border-bottom: 3px solid rgb(90, 179, 230);
+}
+.content{
+  width: 90%;
+  height: 70px;
+  margin: 20px auto;
+  display: flex;
+  align-items: center;
+}
+.content:hover .circle-pfp{
+  background-color: rgb(90, 179, 230);
+}
+.content:hover .circle-pfp i{
+  color: white
+}
+.circle-pfp{
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(232, 245, 251);
+  border-radius: 50%;
+  transition: .5s;
+}
+.circle-pfp i{
+  font-size: 20px;
+  color: rgb(90, 179, 230);
+}
+.txtarea{
+  width: 300px;
+  height: 70px;
+  margin-top: 16px;
+  margin-left: 15px;
+}
+.txtarea h1{
+  font-size: 22px;
+  font-weight: 600;
+  color: rgb(59, 81, 127);
+}
+.txtarea p{
+  font-size: 14px;
+  color: rgb(123, 147, 197);
+}
+.map-box{
+  width: 90%;
+  height: 250px;
+  margin: 20px auto;
+}
+.map-box iframe{
   width: 100%;
   height: 100%;
-  background-image: url(../img/cta-bg.jpg);
   object-fit: cover;
-  background-size: cover;
-  background-position: center;
+}
+.info{
+  width: 57.5%;
+  height: 615px;
+  background-color: white;
+  border-top: 3px solid rgb(90, 179, 230);
+  border-bottom: 3px solid rgb(90, 179, 230);
+  box-shadow: -1px 1px 13px 3px rgba(128, 128, 128, 0.158);
+}
+form{
+  width: 90%;
+  height: 93%;
+  margin: 25px auto;
+}
+label{
+  display: block;
+}
+input{
+  width: 100%;
+  border: 1px solid rgba(128, 128, 128, 0.308);
+  border-radius: 6px;
+  padding-left: 10px;
+  font-size: 15px;
+}
+input:focus{
+  border: 1px solid rgb(90, 179, 230);
+}
+textarea{
+  width: 100%;
+  height: 220px;
+  margin-top: 10px;
+  border: 1px solid rgba(128, 128, 128, 0.308);
+  outline: none;
+  border-radius: 6px;
+  padding-left: 10px;
+  font-size: 15px;
+}
+textarea:focus{
+  border: 1px solid rgb(90, 179, 230);
+}
+.address{
+  width: 100%;
+  height: 81px;
+  display: flex;
+  justify-content: space-between;
+}
+.name{
+  width: 48%;
+  height: 100%;
+}
+.emails{
+  width: 48%;
+  height: 100%;
+}
+.address input{
+  margin-top: 10px;
+  height: 45px;
+}
+.subject{
+  width: 100%;
+  height: 81px;
+  margin-top: 30px;
+}
+.subject input{
+  margin-top: 10px;
+  height: 45px;
+}
+.messages{
+  width: 100%;
+  height: 256px;
+  margin-top: 30px;
+}
+.btn{
+  width: 100%;
+  height: 60px;
+  margin-top: 20px;
+}
+.btn button{
+  width: 170px;
+  height: 100%;
+  outline: none;
+  border: none;
+  border-radius: 40px;
+  background-color: rgb(90, 179, 230);
+  color: white;
+  transition: .5s;
+}
+.btn button:hover{
+  background-color: rgb(63, 158, 218);
+}
+.newsletter{
+  width: 100%;
+  height: 250px;
+  margin-top: 60px;
+  position: relative;
+  background-color: rgb(243, 245, 250);
+}
+.contents{
+  width: 100%;
+  height: 210px;
+  position: absolute;
+  bottom: 0;
+}
+.contents h1{
+  text-align: center;
+  font-size: 25px;
+  font-weight: 600;
+  color: rgb(59, 81, 127);
+}
+.contents p{
+  text-align: center;
+  margin-top: 10px;
+  font-size: 15px;
+}
+.contents input{
+  width: 70%;
+}
+.subscribe{
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+.subscribe input{
+  width: 560px;
+  height: 47px;
+  border: none;
+  box-shadow: 0px -1px 13px 1px rgba(128, 128, 128, 0.158);
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+}
+.subscribe button{
+  width: 130px;
+  height: 47px;
+  border-radius: 30px;
+  background-color: rgb(90, 179, 230);
+  outline: none;
+  border: none;
+  color: white;
+  position: relative;
+  left: -20px;
+  transition: .5s;
+}
+.subscribe button:hover{
+  background-color: rgb(63, 158, 218);
+}
+@media (max-width: 990px){
+  .txtbox{
+    width: 70%;
+
+  }
+  .contact-info{
+    height: 1350px;
+    flex-direction: column;
+  }
+  .maps{
+    width: 70%;
+    margin: auto;
+  }
+  .info{
+    width: 70%;
+    margin: auto;
+  }
+}
+@media (max-width: 700px){
+  .txtbox{
+    width: 100%;
+    height: 100px;
+  }
+  .maps{
+    width: 95%;
+    margin: auto;
+  }
+  .info{
+    width: 95%;
+    margin: auto;
+  }
 }
 .mt-5{
   padding-top: 25px;
